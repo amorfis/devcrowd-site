@@ -1,5 +1,18 @@
-.agenda-table, td {
-  padding: 5px;
+.agenda-table {
+  border-collapse: collapse;
+  border: 1px solid black;
+
+  td {
+    padding: 5px;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
 }
 
+#sidebar {
+  float: right;
+}
 
+.post-content {
+  float: left;
+}
