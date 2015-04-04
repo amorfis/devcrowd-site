@@ -1,7 +1,7 @@
-{% for org in include.sponsors %}
+{% for sponsor in include.sponsors %}
     <li>
-        <a href="{{ org.link }}">
-            <img src="/images/{{ org.image }}">
+        <a href="{{ sponsor.link }}">
+            <img src="/images/{{ sponsor.image }}">
         </a>
     </li>
 {% endfor %}
