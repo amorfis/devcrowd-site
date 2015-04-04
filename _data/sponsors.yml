@@ -1,0 +1,15 @@
+golden:
+  - name: BLStream
+    image: "bls_logo_scaled.png"
+    link: "http://blstream.com/"
+silver:
+  - name: NCDC
+    image: "NCDC_logo_scaled.png"
+    link: "http://ncdc.eu/"
+  - name: SoftwareMill
+    image: "sml_mainlogo_rgb.png"
+    link: "http://softwaremill.com"
+patrons:
+  - name: OSWorld
+    image: "osworld.png"
+    link: "http://osworld.pl/"

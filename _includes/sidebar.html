@@ -1,6 +1,18 @@
 <div id="sidebar">
-  <ul>
-    <li>Sponsor 1</li>
-    <li>Sponsor 2</li>
-  </ul>
+
+  <p>
+    <h2>Sponsorzy złoci</h2>
+    {% include sponsors.html sponsors=site.data.sponsors.golden %}
+  </p>
+
+  <p>
+    <h2>Sponsorzy srebrni</h2>
+    {% include sponsors.html sponsors=site.data.sponsors.silver %}
+  </p>
+
+  <p>
+    <h2>Patroni</h2>
+    {% include sponsors.html sponsors=site.data.sponsors.patrons %}
+  </p>
+
 </div>

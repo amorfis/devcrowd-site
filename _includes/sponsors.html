@@ -1,0 +1,7 @@
+{% for org in include.sponsors %}
+    <li>
+        <a href="{{ org.link }}">
+            <img src="/images/{{ org.image }}">
+        </a>
+    </li>
+{% endfor %}

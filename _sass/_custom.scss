@@ -11,8 +11,19 @@
 
 #sidebar {
   float: right;
+  width: 200px;
+
+  li {
+    list-style-type: none;
+    padding: 10px;
+  }
 }
 
-.post-content {
+.post {
+  float: left;
+  width: 500px;
+}
+
+.home {
   float: left;
 }
