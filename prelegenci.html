@@ -1,0 +1,9 @@
+---
+layout: page
+title: Prelegenci
+permalink: /prelegenci/
+---
+
+{% for presenter in site.data.presenters %}
+{% include presenter.html presenter=presenter %}
+{% endfor %}
