@@ -1,5 +1,16 @@
 - name: Łukasz Lenart
   image: /images/presenters/lenart.jpg
-  description: "<p>Łukasz jest naszym testowym prelegentem.</p>
+  presentations:
+  - title: Jak żyć?
+    description: "Po swojemu"
+  - title: Co jeść?
+    description: Ziemniaki
+  bio: "<p>Łukasz jest naszym testowym prelegentem.</p>
   <p>W ten description można nawet wrzucić tagi html.</p>
   <p>Tu na przykład jest kolejny akapit.</p>"
+- name: Prezenter Prezentowski
+  image: /images/brakpomyslu.jpg
+  presentations:
+  - title: Jak robić prezentacje
+    description: Duże obrazki
+  bio: Prezenter z dużym doświadczeniem.

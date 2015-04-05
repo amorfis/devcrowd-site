@@ -1,3 +1,28 @@
 <h2>{{ include.presenter.name }}</h2>
 <img src="{{ include.presenter.image }}">
-<p>{{ include.presenter.description }}</p>
+
+<ul class="nav nav-tabs">
+    {% for presentation in include.presenter.presentations limit: 1 %}
+    <li class="active"><a href="#{{ include.presenter.name | slugify }}-{{ presentation.title | slugify }}" data-toggle="tab">{{ presentation.title }}</a></li>
+    {% endfor %}
+    {% for presentation in include.presenter.presentations offset: 1 %}
+    <li><a href="#{{ include.presenter.name | slugify }}-{{ presentation.title | slugify }}" data-toggle="tab">{{ presentation.title }}</a></li>
+    {% endfor %}
+
+    <li><a href="#{{ include.presenter.name | slugify }}-bio" data-toggle="tab">Bio</a></li>
+</ul>
+
+<div class="tab-content">
+    {% for presentation in include.presenter.presentations limit: 1 %}
+    <div class="tab-pane active" id="{{ include.presenter.name | slugify }}-{{ presentation.title | slugify }}">
+        {{ presentation.description }}
+    </div>
+    {% endfor %}
+    {% for presentation in include.presenter.presentations offset: 1 %}
+    <div class="tab-pane" id="{{ include.presenter.name | slugify }}-{{ presentation.title | slugify }}">
+        {{ presentation.description }}
+    </div>
+    {% endfor %}
+
+    <div class="tab-pane" id="{{ include.presenter.name | slugify }}-bio">{{ include.presenter.bio }}</div>
+</div>
